@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #0d4d75;
+    --secondary-color: #333333;
+    --background-color: #ffff;
+    --text-color: #ffffff;
+    --border-radius: 15px;
+    --hover-color: #00509e;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--heading-font);
+    background: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+#menu {
+    background: none;
+    font-size: 2rem;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 48px;
+    height: 48px;
+}
+
+#menu.line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--background-color);
+    border-radius: 2px;
+    transition: 0.25s, 0.25s;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.navigation{
+    display: none;
+    background-color: var(--secondary-color);
+}
+.navigation a {
+    display: none;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8rem;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+.navigation a:hover {
+    background: #ffd700;
+    color: var(--hover-color);
+    transition: .3s;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure {
+    background: var(--background-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 30px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    margin: 5px;
+}

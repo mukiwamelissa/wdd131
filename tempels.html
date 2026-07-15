@@ -3,28 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temple.js defer"></script>
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1>
-        <nav>
-                <a href="">Home</a>
-                <a href="">Old</a>
-                <a href="">New</a>
-                <a href="">Large</a>
-                <a href="">Small</a>
+        <p class="title">Temple Album</p>
+        
+        <button id="menu" aria-label="Toggle navigation menu" class="show">
+           <span class="line"></span>
+           <span class="line"></span>
+           <span class="line"></span>
+        </button>
+        
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="old.html">Old</a>
+                </li>
+                <li>
+                    <a href="new.html">New</a>
+                </li>
+                <li>
+                    <a href="large.html">Large</a>
+                </li>
+                <li>
+                    <a href="small.html">Small</a>
+                </li>
+            </ul>
         </nav>
     </header>
+    
     <main>
-        <h1></h1>
+        
+        <h1>Temple Gallery</h1>
+        
+        <div class="gallery"> 
+                
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            
+            </figure>
+            
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/durban-temple.jpg" alt="Temple" loading="lazy">
+                <figcaption>Durban, south Africa</figcaption>
+            </figure>
+
+        <div>
+    
     </main>
+    
     <footer>
         <p>© <span id="currentyear"></span> ♣️ Melissa Mukiwa♣️ South Africa</p>
         <p>Last Modified:
             <span id="lastmodified"></span>
         </p>
-
     </footer>
 </body>
 </html>
