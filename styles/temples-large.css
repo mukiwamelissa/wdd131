@@ -5,13 +5,16 @@
 }
 
 header {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    display: none;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
  
 .navigation a {
