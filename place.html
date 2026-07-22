@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>South Africa</title>
     <meta name="description" content="Temple Album website for week 2 project">
     <meta name="author" content="Melissa Mukiwa"> 
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js defer></script"></script>
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>South Africa</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width:768px)" srcset="images/hero-large.webp">
+            <img src="images/hero-small.webp" alt="South Africa Landscape" class="hero">
+        </picture>
+
+        <section class="content">
+
+            <div class="card">
+                <h2>Data</h2>
+                
+                <p><strong>Area:</strong> 1,221,037 km²</p>
+                <p><strong>Population:</strong> 63 Million</p>
+                <p><strong>Capital:</strong> Pretoria</p>
+                <p><strong>Languages:</strong> 11 Official Languages</p>
+                <p><strong>Currency:</strong> South African Rand (ZAR)</p>
+                <p><strong>Time Zone:</strong> SAST (UTC+2)</p>
+                <p><strong>Calling Code:</strong> +27</p>
+                <p><strong>Internet:</strong> .za</p>
+
+            </div>
+
+            <div class="card weather">
+                <h2>weather</h2>
+
+                <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+                <p>Temperature: <span id="temp">8</span> °C</p>
+                <p>Conditions: Cloudy</p>
+                <p>Wind: <span id="wind">12</span> km/h</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+
+
+        
+            </div>
+
+        </section>
+        
+    </main>
+ <footer>
+        <p>© <span id="currentyear"></span> ♣️ Melissa Mukiwa♣️ South Africa</p>
+        <p>Last Modified:
+            <span id="lastmodified"></span>
+        </p>
+
+</footer>
 </body>
 </html>
