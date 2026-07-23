@@ -112,7 +112,7 @@ footer p{
 }
 
 .card, .card-weather {
-    width: 260px;
+    width: 300px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 5px 15px rgba(0,0,0,.3);
     border-radius: 4px;
@@ -131,6 +131,7 @@ footer p{
     padding: 0 20px;
     font-size: 1rem;
     line-height: 1.8;
+    margin: 12px 0;
 }
 
 .card p:last-child {
