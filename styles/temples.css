@@ -22,76 +22,43 @@ body {
 }
 
 header {
-    background: var(--primary-color);
-    color: var(--text-color);
-    padding: 1rem;
-}
-
-.title {
-    margin: 0;
-    font-family: var(--heading-font);
-    font-size: 2rem;
-    font-weight: 800;
-    unicode-bidi: isolate;
+  background-color: var(--primary-color); 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 #menu {
-    background: none;
-    font-size: 2rem;
-    border: none;
-    color: var(--text-color);
-    cursor: pointer;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 48px;
-    height: 48px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-#menu.line {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: var(--background-color);
-    border-radius: 2px;
-    transition: 0.25s, 0.25s;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0.5rem;
-}
-
-.navigation{
-    display: none;
-    background-color: var(--secondary-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    color: #000;
-
-}
-.navigation a {
-    display: none;
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 3rem;
+.navigation {
+  display: none;
+  width: 100%;
 }
 
 .navigation.open {
-    display: flex;
+  display: block;
 }
 
-.navigation a:hover {
-    background: #ffd700;
-    color: var(--hover-color);
-    transition: .3s;
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  text-align: center;
 }
 
 main {
