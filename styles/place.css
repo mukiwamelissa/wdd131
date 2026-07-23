@@ -48,7 +48,7 @@ header{
 
 .card h2, .card-weather h2{
     margin-bottom:15px;
-    color:var(red);
+    color:red;
     display: flex;
     justify-content: center;
 
