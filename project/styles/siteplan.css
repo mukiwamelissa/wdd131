@@ -1,0 +1,51 @@
+:root {
+    --primary: #2E8B57;
+    --secondary: #F5E6C8;
+    --accent: #D4A017;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: var(--secondary);
+    color: #333;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--accent);
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 6px solid var(--primary);
+    border-radius: 8px;
+}
+
+pre {
+    background: #eee;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+footer {
+    margin-top: 20px;
+}
