@@ -78,6 +78,42 @@ main h1 {
     gap: 20px;
 }
 
+.gallery h3 {
+  font-size: 1.5rem;
+  color: #2b3a42; /* Dark muted teal/slate */
+  margin-bottom: 0.5rem;
+}
+
+.gallery section{
+    background:#fff;
+    padding:1rem;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.gallery p span, 
+.gallery p strong {
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #637a86; 
+  letter-spacing: 0.5px;
+}
+
+.gallery p {
+  color: #3b505c; 
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.gallery img{
+    width:100%;
+    height:auto;
+    margin-top:1rem;
+    border-radius:8px;
+}
+
 figure {
     background: var(--background-color);
     border-radius: 10px;
@@ -108,27 +144,6 @@ footer{
 
 footer p{
     margin: 5px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:1.5rem;
-}
-
-.gallery section{
-    background:#fff;
-    padding:1rem;
-    border-radius:10px;
-    text-align:center;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-}
-
-.gallery img{
-    width:100%;
-    height:auto;
-    margin-top:1rem;
-    border-radius:8px;
 }
 
 
