@@ -11,11 +11,6 @@ menuButton.addEventListener("click", () => {
   }
 });
 
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-document.getElementById("lastModified").textContent =
-`Last Modified: ${document.lastModified}`;
-
 const temples = [
 {
 templeName: "Aba Nigeria",
@@ -94,32 +89,37 @@ imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-t
 
 const gallery = document.querySelector(".gallery");
 
-function displayTemples(templeList) {
+
+function createTempleCard() {
 
 gallery.innerHTML = "";
 
 templeList.forEach(temple => {
 
-const card = document.createElement("section");
+let card = document.createElement("section");
 
-const name = document.createElement("h3");
-const location = document.createElement("p");
-const dedicated = document.createElement("p");
-const area = document.createElement("p");
-const image = document.createElement("img");
+let name = document.createElement("h3");
+let location = document.createElement("p");
+let dedicated = document.createElement("p");
+let area = document.createElement("p");
+let image = document.createElement("img");
 
 name.textContent = temple.templeName;
 location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
 dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
 area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
-image.src = temple.imageUrl;
-image.alt = temple.templeName;
-image.loading = "lazy";
+img.setAttribute("src",temple.imageUrl);
+img.setAttribute ("alt", `${temple.templeName} Temple`);
+img.setAttribute("loading", "lazy");
 image.width = 400;
 image.height = 250;
 
-card.append(name, location, dedicated, area, image);
+card.appendChild(name);
+card.appendChild(location);
+card.appendChild(dedicated);
+card.appendChild(area);
+card.appendChild(image);
 
 gallery.append(card);
 
@@ -162,3 +162,9 @@ temples.filter(temple =>
 temple.area < 10000)
 );
 });
+
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+document.getElementById("lastModified").textContent =
+`Last Modified: ${document.lastModified}`;
