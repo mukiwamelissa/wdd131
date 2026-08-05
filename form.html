@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
+    <meta name="description" content="Product review forn consists of information needed to be filled in.">
+    <meta name="author" content="Melissa Mukiwa"> 
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -15,13 +17,13 @@
     <main>
         <form action="review.html" method="get" class="review-form">
             
-            <label for="product-select">Product Name</label>
+            <label for="product-select">Product Name<span class="required">*</span></label>
             <select id="product-select" name="product-name" required>
                 <option value="" disabled selected>Select a Product ...</option>
             </select>
 
             <fieldset class="rating-fieldset">
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating<span class="required">*</span></legend>
                 <div class="star-rating">
                     <label for="rating1">
                         <span class="stars">&star;</span>
@@ -46,7 +48,7 @@
                 </div>
             </fieldset>
 
-            <label for="install-date">Date of Installation</label>
+            <label for="install-date">Date of Installation<span class="required">*</span></label>
             <input type="date" id="install-date" name="install-date" required>
 
             <fieldset class="features-fieldset">
