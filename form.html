@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get" class="review-form">
+            
+            <label for="product-select">Product Name</label>
+            <select id="product-select" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset class="rating-fieldset">
+                <legend>Overall Rating</legend>
+                <div class="star-rating">
+                    <label for="rating1">
+                        <span class="stars">&star;</span>
+                        <input type="radio" id="rating1" name="overall-rating" value="1" required>
+                    </label>
+                    <label for="rating2">
+                        <span class="stars">&star;&star;</span>
+                        <input type="radio" id="rating2" name="overall-rating" value="2" required>
+                    </label>
+                    <label for="rating3">
+                        <span class="stars">&star;&star;&star;</span>
+                        <input type="radio" id="rating3" name="overall-rating" value="3" required>
+                    </label>
+                    <label for="rating4">
+                        <span class="stars">&star;&star;&star;&star;</span>
+                        <input type="radio" id="rating4" name="overall-rating" value="4" required>
+                    </label>
+                    <label for="rating5">
+                        <span class="stars">&star;&star;&star;&star;&star;</span>
+                        <input type="radio" id="rating5" name="overall-rating" value="5" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <fieldset class="features-fieldset">
+                <legend>Which features did you find useful in the product?</legend>
+                <p class="subtext"><em>(Check all that apply)</em></p>
+                
+                <label for="durability" class="checkbox-label">
+                    <input type="checkbox" id="durability" name="useful-features" value="durability">
+                    Durability
+                </label>
+                <label for="ease-of-use" class="checkbox-label">
+                    <input type="checkbox" id="ease-of-use" name="useful-features" value="ease-of-use">
+                    Ease of Use
+                </label>
+                <label for="performance" class="checkbox-label">
+                    <input type="checkbox" id="performance" name="useful-features" value="performance">
+                    Performance
+                </label>
+                <label for="design" class="checkbox-label">
+                    <input type="checkbox" id="design" name="useful-features" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="written-review" name="written-review" rows="5"></textarea>
+
+            <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="user-name" name="user-name">
+
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> ♣️ Melissa Mukiwa♣️ South Africa</p>
+        <p>Last Modified:
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>
