@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore South Africa National Parks</title>
+    <meta name="description" content="Explore South Africa's beautiful national parks, wildlife, travel tips and visitor information.">
+    <meta name="author" content="Melissa Mukiwa">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌿 Explore SA Parks
+        </div>
+
+        <button id="menuButton">&#9776;</button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="parks.html">National Parks</a></li>
+                <li><a href="visit.html">Plan Your Visit</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <img
+                src="images/hero.webp"
+                alt="South African National Park"
+                loading="lazy">
+
+            <div class="hero-text">
+                <h1>Explore South Africa's National Parks</h1>
+
+                <p>
+                    Discover breathtaking landscapes, amazing wildlife,
+                    and unforgettable adventures across South Africa.
+                </p>
+
+                <a href="parks.html" class="btn">
+                    Explore Parks
+                </a>
+            </div>
+
+        </section>
+
+        <section class="intro">
+
+            <h2>Welcome</h2>
+
+            <p>
+
+                South Africa is home to some of the world's most
+                spectacular national parks. From the famous Big Five
+                to beautiful mountains and coastlines, every park
+                offers a unique experience for nature lovers.
+
+            </p>
+
+        </section>
+
+        <section class="featured">
+
+            <h2>Featured National Parks</h2>
+
+            <div id="featuredParks" class="park-grid">
+
+
+            </div>
+
+        </section>
+
+        <section class="tips">
+
+            <h2>Travel Tip</h2>
+
+            <p id="travelTip">
+
+            </p>
+
+        </section>
+
+        <section class="why">
+
+            <h2>Why Visit South Africa?</h2>
+
+            <div class="reasons">
+
+                <div>
+
+                    <h3>Wildlife</h3>
+
+                    <p>
+                    See lions, elephants,
+                    rhinos, buffaloes,
+                    and leopards in their
+                    natural habitats.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Nature</h3>
+
+                    <p>
+                    Explore forests,
+                    mountains,
+                    deserts,
+                    wetlands,
+                    and coastlines.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Adventure</h3>
+
+                    <p>
+                    Enjoy hiking,
+                    game drives,
+                    bird watching,
+                    camping,
+                    and photography.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> ♣️ Melissa Mukiwa♣️ South Africa</p>
+        <p>Last Modified:
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>

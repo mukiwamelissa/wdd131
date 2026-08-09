@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks | Explore South Africa</title>
+    <meta name="description" content="Discover South Africa's national parks, wildlife, activities and beautiful landscapes.">
+    <meta name="author" content="Melissa Mukiwa">
+
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/parks.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌿 Explore SA Parks
+        </div>
+
+        <button id="menuButton" aria-label="Open navigation">
+            &#9776;
+        </button>
+
+        <nav id="navigation">
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="parks.html" class="active">National Parks</a>
+                </li>
+                <li>
+                    <a href="visit.html">Plan Your Visit</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+    <section class="page-intro">
+
+        <h1>South Africa's National Parks</h1>
+
+        <p>
+            South Africa has a remarkable variety of landscapes and
+            wildlife. Explore some of the country's most interesting
+            national parks and discover what makes each destination
+            special.
+        </p>
+
+    </section>
+
+
+    <section class="park-search">
+
+        <h2>Find a Park</h2>
+
+        <label for="searchPark">
+            Search by park name or location
+        </label>
+
+        <input
+            type="search"
+            id="searchPark"
+            placeholder="Example: Kruger">
+
+        <div class="filter-buttons">
+
+            <button type="button" data-category="All">
+                All
+            </button>
+
+            <button type="button" data-category="Big Five">
+                Big Five
+            </button>
+
+            <button type="button" data-category="Wildlife">
+                Wildlife
+            </button>
+
+            <button type="button" data-category="Mountain">
+                Mountain
+            </button>
+
+            <button type="button" data-category="Coastal">
+                Coastal
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Explore the Parks</h2>
+
+        <div id="allParks" class="park-grid">
+
+        </div>
+
+        <p id="noResults" class="no-results">
+            No parks were found.
+        </p>
+
+    </section>
+
+
+    <section class="park-information">
+
+        <h2>Wildlife to Look For</h2>
+
+        <div class="reasons">
+
+            <div>
+
+                <h3>Lions</h3>
+
+                <p>
+                    Lions are one of Africa's most recognizable
+                    predators. They can often be spotted resting
+                    during the heat of the day.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Elephants</h3>
+
+                <p>
+                    African elephants are found in several South
+                    African parks and are known for their intelligence,
+                    family groups and impressive size.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Rhinos</h3>
+
+                <p>
+                    South Africa is home to both black and white
+                    rhinoceroses. Visitors should always observe
+                    these animals from a safe distance.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Leopards</h3>
+
+                <p>
+                    Leopards are powerful and elusive cats. They are
+                    often difficult to spot because they are excellent
+                    at hiding among vegetation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="conservation">
+
+        <h2>Protecting South Africa's Wildlife</h2>
+
+        <p>
+            National parks play an important role in protecting
+            wildlife and natural habitats. Responsible tourism helps
+            support conservation efforts and local communities.
+            Visitors can help by following park rules, keeping
+            wildlife at a safe distance, avoiding littering and
+            respecting the natural environment.
+        </p>
+
+    </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> ♣️ Melissa Mukiwa♣️ South Africa</p>
+        <p>Last Modified:
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>

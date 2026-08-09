@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plan Your Visit | Explore South Africa</title>
+
+    <meta name="description"
+        content="Plan your visit to South Africa's national parks with travel tips, activities and a visitor form.">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/parks.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌿 Explore SA Parks
+        </div>
+
+        <button id="menuButton" aria-label="Open navigation">
+            &#9776;
+        </button>
+
+        <nav id="navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="parks.html">National Parks</a>
+                </li>
+                <li>
+                    <a href="visit.html" class="active">Plan Your Visit</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+    <section class="page-intro">
+
+        <h1>Plan Your Visit</h1>
+
+        <p>
+            Planning ahead can make your national park experience
+            safer, more comfortable and more enjoyable.
+        </p>
+
+    </section>
+
+
+    <section class="visit-grid">
+
+        <article class="info-box">
+
+            <h2>Best Time to Visit</h2>
+
+            <p>
+                The best time to visit depends on the park and the
+                experience you want. The dry winter months can make
+                wildlife easier to spot in many game reserves because
+                animals gather around available water sources.
+            </p>
+
+        </article>
+
+
+        <article class="info-box">
+
+            <h2>What to Bring</h2>
+
+            <ul>
+
+                <li>Comfortable clothing</li>
+                <li>Walking shoes</li>
+                <li>Sun protection</li>
+                <li>Drinking water</li>
+                <li>Binoculars</li>
+                <li>Camera</li>
+
+            </ul>
+
+        </article>
+
+
+        <article class="info-box">
+
+            <h2>Safety Tips</h2>
+
+            <ul>
+
+                <li>Stay inside designated areas.</li>
+                <li>Never feed wild animals.</li>
+                <li>Keep a safe distance from wildlife.</li>
+                <li>Follow park rules and signs.</li>
+                <li>Keep emergency contact information available.</li>
+
+            </ul>
+
+        </article>
+
+    </section>
+
+
+    <section class="packing-section">
+
+        <h2>My Packing Checklist</h2>
+
+        <p>
+            Select the items you plan to bring on your trip.
+        </p>
+
+        <div class="checklist">
+
+            <label>
+                <input type="checkbox" value="Water">
+                Drinking water
+            </label>
+
+            <label>
+                <input type="checkbox" value="Sunscreen">
+                Sunscreen
+            </label>
+
+            <label>
+                <input type="checkbox" value="Hat">
+                Hat
+            </label>
+
+            <label>
+                <input type="checkbox" value="Binoculars">
+                Binoculars
+            </label>
+
+            <label>
+                <input type="checkbox" value="Camera">
+                Camera
+            </label>
+
+            <label>
+                <input type="checkbox" value="Walking shoes">
+                Walking shoes
+            </label>
+
+        </div>
+
+        <button id="savePackingList" class="btn">
+            Save My Checklist
+        </button>
+
+        <p id="packingMessage"></p>
+
+    </section>
+
+
+    <section class="visitor-form">
+
+        <h2>Plan Your Trip</h2>
+
+        <p>
+            Tell us about your planned visit.
+        </p>
+
+        <form id="visitForm">
+
+            <div class="form-group">
+
+                <label for="visitorName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="visitorName"
+                    name="visitorName"
+                    autocomplete="name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="favoritePark">
+                    Favorite National Park
+                </label>
+
+                <select
+                    id="favoritePark"
+                    name="favoritePark"
+                    required>
+
+                    <option value="">
+                        Select a park
+                    </option>
+
+                    <option value="Kruger National Park">
+                        Kruger National Park
+                    </option>
+
+                    <option value="Addo Elephant National Park">
+                        Addo Elephant National Park
+                    </option>
+
+                    <option value="Table Mountain National Park">
+                        Table Mountain National Park
+                    </option>
+
+                    <option value="Hluhluwe-iMfolozi Park">
+                        Hluhluwe-iMfolozi Park
+                    </option>
+
+                    <option value="Garden Route National Park">
+                        Garden Route National Park
+                    </option>
+
+                    <option value="Mapungubwe National Park">
+                        Mapungubwe National Park
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="visitDate">
+                    Planned Visit Date
+                </label>
+
+                <input
+                    type="date"
+                    id="visitDate"
+                    name="visitDate"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="visitors">
+                    Number of Visitors
+                </label>
+
+                <input
+                    type="number"
+                    id="visitors"
+                    name="visitors"
+                    min="1"
+                    max="50"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Additional Comments
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about your trip..."></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn">
+
+                Submit
+
+            </button>
+
+        </form>
+
+        <div id="formMessage"></div>
+
+    </section>
+
+
+    <section class="favorite-section">
+
+        <h2>Your Saved Park</h2>
+
+        <p id="savedPark">
+            You have not saved a favorite park yet.
+        </p>
+
+    </section>
+
+    </main>
+
+
+    <footer>
+        <p>© <span id="currentyear"></span> ♣️ Melissa Mukiwa♣️ South Africa</p>
+        <p>Last Modified:
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
